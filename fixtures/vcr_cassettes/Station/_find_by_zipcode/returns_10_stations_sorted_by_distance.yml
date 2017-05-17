@@ -1,0 +1,144 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://developer.nrel.gov/api/alt-fuel-stations/v1/nearest.json?api_key=w32U0X4QB1PV3R0XOeE5EOp8gdNux0SLBeAZF7qf&fuel_type=ELEC&location=80302
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.11.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - openresty
+      Date:
+      - Wed, 17 May 2017 17:11:44 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      - Accept-Encoding
+      - Origin
+      X-Ratelimit-Limit:
+      - '1000'
+      X-Ratelimit-Remaining:
+      - '998'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Last-Modified:
+      - Wed, 17 May 2017 17:11:44 GMT
+      X-Request-Id:
+      - bf53260b-cadc-4ed7-9a52-30f0c441e572
+      X-Runtime:
+      - '0.008760'
+      Age:
+      - '0'
+      Via:
+      - http/1.1 api-umbrella (ApacheTrafficServer [cMsSf ])
+      X-Cache:
+      - MISS
+      Access-Control-Allow-Origin:
+      - "*"
+    body:
+      encoding: ASCII-8BIT
+      string: '{"latitude":40.036037,"longitude":-105.349559,"precision":{"types":["postal_code"],"name":"postal_code","value":5},"station_locator_url":"http://www.afdc.energy.gov/afdc/locator/stations/","total_results":21,"station_counts":{"total":51,"fuels":{"E85":{"total":0},"ELEC":{"total":51,"stations":{"total":21}},"HY":{"total":0},"LNG":{"total":0},"BD":{"total":0},"CNG":{"total":0},"LPG":{"total":0}}},"offset":0,"fuel_stations":[{"access_days_time":"Center
+        business hours","cards_accepted":null,"date_last_confirmed":"2016-11-02","expected_date":null,"fuel_type_code":"ELEC","id":42431,"groups_with_access_code":"Public","open_date":"2012-12-31","owner_type_code":"LG","status_code":"E","station_name":"City
+        of Boulder - North Boulder Recreation Center","station_phone":"303-413-7260","updated_at":"2017-01-18T02:28:30Z","geocode_status":"200-8","latitude":40.0323777,"longitude":-105.2820494,"city":"Boulder","intersection_directions":null,"plus4":null,"state":"CO","street_address":"3170
+        Broadway","zip":"80304","bd_blends":null,"e85_blender_pump":null,"ev_connector_types":["NEMA520","J1772"],"ev_dc_fast_num":null,"ev_level1_evse_num":1,"ev_level2_evse_num":1,"ev_network":null,"ev_network_web":null,"ev_other_evse":null,"hy_status_link":null,"lpg_primary":null,"ng_fill_type_code":null,"ng_psi":null,"ng_vehicle_class":null,"distance":3.58925},{"access_days_time":"24
+        hours daily","cards_accepted":null,"date_last_confirmed":"2017-05-17","expected_date":null,"fuel_type_code":"ELEC","id":82570,"groups_with_access_code":"Public","open_date":null,"owner_type_code":null,"status_code":"E","station_name":"BOULDER
+        COUNTY","station_phone":"888-758-4389","updated_at":"2017-05-17T08:09:13Z","geocode_status":"GPS","latitude":40.0371257,"longitude":-105.2814428,"city":"Boulder","intersection_directions":"N
+        BROADWAY 1","plus4":null,"state":"CO","street_address":"3450 Broadway","zip":"80304","bd_blends":null,"e85_blender_pump":null,"ev_connector_types":["J1772"],"ev_dc_fast_num":null,"ev_level1_evse_num":null,"ev_level2_evse_num":2,"ev_network":"ChargePoint
+        Network","ev_network_web":"http://www.chargepoint.com/","ev_other_evse":null,"hy_status_link":null,"lpg_primary":null,"ng_fill_type_code":null,"ng_psi":null,"ng_vehicle_class":null,"ev_network_ids":{"posts":["1:155433"]},"distance":3.61318},{"access_days_time":"Employee
+        use only","cards_accepted":null,"date_last_confirmed":"2016-11-02","expected_date":"2016-12-15","fuel_type_code":"ELEC","id":79298,"groups_with_access_code":"PLANNED
+        - not yet accessible (Private)","open_date":null,"owner_type_code":"LG","status_code":"P","station_name":"City
+        of Boulder - Broadway and Alpine Parking Garage","station_phone":null,"updated_at":"2017-01-18T01:50:18Z","geocode_status":"200-8","latitude":40.0250255,"longitude":-105.2824137,"city":"Boulder","intersection_directions":null,"plus4":null,"state":"CO","street_address":"2655
+        N Broadway","zip":"80304","bd_blends":null,"e85_blender_pump":null,"ev_connector_types":["J1772"],"ev_dc_fast_num":null,"ev_level1_evse_num":null,"ev_level2_evse_num":6,"ev_network":null,"ev_network_web":null,"ev_other_evse":null,"hy_status_link":null,"lpg_primary":null,"ng_fill_type_code":null,"ng_psi":null,"ng_vehicle_class":null,"distance":3.64136},{"access_days_time":"MO:
+        12:00am-12:00am; TU: 12:00am-12:00am; WE: 12:00am-12:00am; TH: 12:00am-12:00am;
+        FR: 12:00am-12:00am; SA: 12:00am-12:00am; SU: 12:00am-12:00am","cards_accepted":null,"date_last_confirmed":"2017-05-17","expected_date":null,"fuel_type_code":"ELEC","id":81725,"groups_with_access_code":"Public","open_date":null,"owner_type_code":null,"status_code":"E","station_name":"Vision
+        Ridge Partners","station_phone":"800-663-5633","updated_at":"2017-05-17T07:51:13Z","geocode_status":"GPS","latitude":40.016728110325,"longitude":-105.2820789814,"city":"Boulder","intersection_directions":"The
+        station is located in the alley behind Vision Ridge Partners and is offered
+        as Open Access, courtesy of Vision Ridge.","plus4":null,"state":"CO","street_address":"1011
+        Walnut Street","zip":"80302","bd_blends":null,"e85_blender_pump":null,"ev_connector_types":["J1772"],"ev_dc_fast_num":null,"ev_level1_evse_num":null,"ev_level2_evse_num":1,"ev_network":"SemaCharge
+        Network","ev_network_web":"http://www.semacharge.com/","ev_other_evse":null,"hy_status_link":null,"lpg_primary":null,"ng_fill_type_code":null,"ng_psi":null,"ng_vehicle_class":null,"ev_network_ids":{"station":["1534"],"posts":["3998"]},"distance":3.81908},{"access_days_time":"24
+        hours daily","cards_accepted":null,"date_last_confirmed":"2017-05-17","expected_date":null,"fuel_type_code":"ELEC","id":80401,"groups_with_access_code":"Public","open_date":null,"owner_type_code":null,"status_code":"E","station_name":"NAMASTE
+        SOLAR 1","station_phone":"888-758-4389","updated_at":"2017-05-17T08:06:14Z","geocode_status":"GPS","latitude":40.0577982,"longitude":-105.2822751,"city":"Boulder","intersection_directions":"STATION
+        1; NE corner of Namaste Solar front parking lot","plus4":null,"state":"CO","street_address":"4571
+        Broadway St","zip":"80304","bd_blends":null,"e85_blender_pump":null,"ev_connector_types":["J1772"],"ev_dc_fast_num":null,"ev_level1_evse_num":null,"ev_level2_evse_num":2,"ev_network":"ChargePoint
+        Network","ev_network_web":"http://www.chargepoint.com/","ev_other_evse":null,"hy_status_link":null,"lpg_primary":null,"ng_fill_type_code":null,"ng_psi":null,"ng_vehicle_class":null,"ev_network_ids":{"posts":["1:158039"]},"distance":3.87077},{"access_days_time":"24
+        hours daily","cards_accepted":null,"date_last_confirmed":"2017-02-01","expected_date":null,"fuel_type_code":"ELEC","id":81147,"groups_with_access_code":"Public","open_date":"2016-07-15","owner_type_code":"LG","status_code":"E","station_name":"Boulder
+        Downtown Courthouse","station_phone":"888-751-8560  303-441-3965","updated_at":"2017-02-01T20:08:15Z","geocode_status":"GPS","latitude":40.018794,"longitude":-105.278196,"city":"Boulder","intersection_directions":null,"plus4":null,"state":"CO","street_address":"1325
+        Pearl St","zip":"80302","bd_blends":null,"e85_blender_pump":null,"ev_connector_types":["J1772"],"ev_dc_fast_num":null,"ev_level1_evse_num":null,"ev_level2_evse_num":2,"ev_network":"Greenlots","ev_network_web":"http://greenlots.com/","ev_other_evse":null,"hy_status_link":null,"lpg_primary":null,"ng_fill_type_code":null,"ng_psi":null,"ng_vehicle_class":null,"distance":3.96765},{"access_days_time":"24
+        hours daily","cards_accepted":null,"date_last_confirmed":"2017-05-17","expected_date":null,"fuel_type_code":"ELEC","id":78436,"groups_with_access_code":"Public","open_date":null,"owner_type_code":null,"status_code":"E","station_name":"ONE
+        BOULDER PLZ","station_phone":"888-758-4389","updated_at":"2017-05-17T08:06:25Z","geocode_status":"GPS","latitude":40.0167828,"longitude":-105.2786134,"city":"Boulder","intersection_directions":"1801
+        2; Parking garage P2 south/center","plus4":null,"state":"CO","street_address":"1801
+        13th St","zip":"80302","bd_blends":null,"e85_blender_pump":null,"ev_connector_types":["J1772"],"ev_dc_fast_num":null,"ev_level1_evse_num":null,"ev_level2_evse_num":2,"ev_network":"ChargePoint
+        Network","ev_network_web":"http://www.chargepoint.com/","ev_other_evse":null,"hy_status_link":null,"lpg_primary":null,"ng_fill_type_code":null,"ng_psi":null,"ng_vehicle_class":null,"ev_network_ids":{"posts":["1:157847"]},"distance":3.99061},{"access_days_time":"24
+        hours daily","cards_accepted":null,"date_last_confirmed":"2017-05-17","expected_date":null,"fuel_type_code":"ELEC","id":51073,"groups_with_access_code":"Public","open_date":null,"owner_type_code":null,"status_code":"E","station_name":"ONE
+        BOULDER PLZ","station_phone":"888-758-4389","updated_at":"2017-05-17T09:11:20Z","geocode_status":"GPS","latitude":40.0166112,"longitude":-105.2786031,"city":"Boulder","intersection_directions":"1801
+        #1; Enter garage on Walnut St., Bottom Level","plus4":null,"state":"CO","street_address":"1800
+        Broadway","zip":"80302","bd_blends":null,"e85_blender_pump":null,"ev_connector_types":["NEMA520","J1772"],"ev_dc_fast_num":null,"ev_level1_evse_num":1,"ev_level2_evse_num":1,"ev_network":"ChargePoint
+        Network","ev_network_web":"http://www.chargepoint.com/","ev_other_evse":null,"hy_status_link":null,"lpg_primary":null,"ng_fill_type_code":null,"ng_psi":null,"ng_vehicle_class":null,"ev_network_ids":{"posts":["1:85459"]},"distance":3.99509},{"access_days_time":null,"cards_accepted":null,"date_last_confirmed":"2016-11-02","expected_date":null,"fuel_type_code":"ELEC","id":42543,"groups_with_access_code":"Private","open_date":"2012-08-31","owner_type_code":"LG","status_code":"E","station_name":"City
+        of Boulder - Park Central Building","station_phone":null,"updated_at":"2017-01-18T02:56:27Z","geocode_status":"GPS","latitude":40.0148,"longitude":-105.2792,"city":"Boulder","intersection_directions":null,"plus4":null,"state":"CO","street_address":"1739
+        Broadway","zip":"80302","bd_blends":null,"e85_blender_pump":null,"ev_connector_types":["NEMA520","J1772"],"ev_dc_fast_num":null,"ev_level1_evse_num":2,"ev_level2_evse_num":2,"ev_network":null,"ev_network_web":null,"ev_other_evse":null,"hy_status_link":null,"lpg_primary":null,"ng_fill_type_code":null,"ng_psi":null,"ng_vehicle_class":null,"distance":4.00929},{"access_days_time":"24
+        hours daily","cards_accepted":null,"date_last_confirmed":"2017-05-17","expected_date":null,"fuel_type_code":"ELEC","id":61021,"groups_with_access_code":"Public","open_date":null,"owner_type_code":null,"status_code":"E","station_name":"BOULDER
+        GARAGE","station_phone":"888-758-4389","updated_at":"2017-05-17T09:00:04Z","geocode_status":"GPS","latitude":40.0193074,"longitude":-105.2763945,"city":"Boulder","intersection_directions":"15TH
+        & SPRUCE 1; Basement Level","plus4":null,"state":"CO","street_address":"2001-2099
+        15th St","zip":"80302","bd_blends":null,"e85_blender_pump":null,"ev_connector_types":["J1772"],"ev_dc_fast_num":null,"ev_level1_evse_num":null,"ev_level2_evse_num":2,"ev_network":"ChargePoint
+        Network","ev_network_web":"http://www.chargepoint.com/","ev_other_evse":null,"hy_status_link":null,"lpg_primary":null,"ng_fill_type_code":null,"ng_psi":null,"ng_vehicle_class":null,"ev_network_ids":{"posts":["1:98229"]},"distance":4.04865},{"access_days_time":"24
+        hours daily","cards_accepted":null,"date_last_confirmed":"2017-05-17","expected_date":null,"fuel_type_code":"ELEC","id":78435,"groups_with_access_code":"Public","open_date":null,"owner_type_code":null,"status_code":"E","station_name":"ONE
+        BOULDER PLZ","station_phone":"888-758-4389","updated_at":"2017-05-17T08:06:14Z","geocode_status":"GPS","latitude":40.0165381,"longitude":-105.2775274,"city":"Boulder","intersection_directions":"1301;
+        Parking garage P1 north/east","plus4":null,"state":"CO","street_address":"1301
+        Canyon Blvd","zip":"80302","bd_blends":null,"e85_blender_pump":null,"ev_connector_types":["J1772"],"ev_dc_fast_num":null,"ev_level1_evse_num":null,"ev_level2_evse_num":2,"ev_network":"ChargePoint
+        Network","ev_network_web":"http://www.chargepoint.com/","ev_other_evse":null,"hy_status_link":null,"lpg_primary":null,"ng_fill_type_code":null,"ng_psi":null,"ng_vehicle_class":null,"ev_network_ids":{"posts":["1:158019"]},"distance":4.05056},{"access_days_time":"Employee
+        use only","cards_accepted":null,"date_last_confirmed":"2016-11-02","expected_date":"2016-12-15","fuel_type_code":"ELEC","id":79297,"groups_with_access_code":"PLANNED
+        - not yet accessible (Private)","open_date":null,"owner_type_code":"LG","status_code":"P","station_name":"City
+        of Boulder - Atrium Building","station_phone":null,"updated_at":"2017-01-18T02:48:51Z","geocode_status":"200-8","latitude":40.015925,"longitude":-105.27745,"city":"Boulder","intersection_directions":null,"plus4":null,"state":"CO","street_address":"1300
+        Canyon Blvd","zip":"80302","bd_blends":null,"e85_blender_pump":null,"ev_connector_types":["J1772"],"ev_dc_fast_num":null,"ev_level1_evse_num":null,"ev_level2_evse_num":4,"ev_network":null,"ev_network_web":null,"ev_other_evse":null,"hy_status_link":null,"lpg_primary":null,"ng_fill_type_code":null,"ng_psi":null,"ng_vehicle_class":null,"distance":4.06868},{"access_days_time":null,"cards_accepted":null,"date_last_confirmed":"2016-11-02","expected_date":null,"fuel_type_code":"ELEC","id":42540,"groups_with_access_code":"Private","open_date":"2012-08-31","owner_type_code":"LG","status_code":"E","station_name":"City
+        of Boulder - Facility Maintenance","station_phone":null,"updated_at":"2017-01-18T02:48:13Z","geocode_status":"200-8","latitude":40.0148003,"longitude":-105.2774775,"city":"Boulder","intersection_directions":null,"plus4":null,"state":"CO","street_address":"1720
+        13th St","zip":"80302","bd_blends":null,"e85_blender_pump":null,"ev_connector_types":["NEMA520","J1772"],"ev_dc_fast_num":null,"ev_level1_evse_num":2,"ev_level2_evse_num":2,"ev_network":null,"ev_network_web":null,"ev_other_evse":null,"hy_status_link":null,"lpg_primary":null,"ng_fill_type_code":null,"ng_psi":null,"ng_vehicle_class":null,"distance":4.09446},{"access_days_time":"24
+        hours daily; pay lot","cards_accepted":null,"date_last_confirmed":"2016-11-02","expected_date":null,"fuel_type_code":"ELEC","id":53938,"groups_with_access_code":"Public","open_date":"2013-06-01","owner_type_code":"LG","status_code":"E","station_name":"City
+        of Boulder - Pearl Street Parking Garage","station_phone":"303-413-7300","updated_at":"2017-01-18T02:56:27Z","geocode_status":"200-8","latitude":40.018536,"longitude":-105.275296,"city":"Boulder","intersection_directions":null,"plus4":null,"state":"CO","street_address":"1500
+        Pearl St","zip":"80302","bd_blends":null,"e85_blender_pump":null,"ev_connector_types":["NEMA520","J1772"],"ev_dc_fast_num":null,"ev_level1_evse_num":1,"ev_level2_evse_num":1,"ev_network":null,"ev_network_web":null,"ev_other_evse":null,"hy_status_link":null,"lpg_primary":null,"ng_fill_type_code":null,"ng_psi":null,"ng_vehicle_class":null,"distance":4.11984},{"access_days_time":"24
+        hours daily","cards_accepted":null,"date_last_confirmed":"2017-05-17","expected_date":null,"fuel_type_code":"ELEC","id":81679,"groups_with_access_code":"Public","open_date":null,"owner_type_code":null,"status_code":"E","station_name":"BVSD","station_phone":"888-758-4389","updated_at":"2017-05-17T08:12:27Z","geocode_status":"GPS","latitude":40.0214858,"longitude":-105.2696752,"city":"Boulder","intersection_directions":"WHITTIER
+        ELEM; Staff only parking during school hours. South parking lot.","plus4":null,"state":"CO","street_address":"2008
+        Pine Street","zip":"80302","bd_blends":null,"e85_blender_pump":null,"ev_connector_types":["J1772"],"ev_dc_fast_num":null,"ev_level1_evse_num":null,"ev_level2_evse_num":2,"ev_network":"ChargePoint
+        Network","ev_network_web":"http://www.chargepoint.com/","ev_other_evse":null,"hy_status_link":null,"lpg_primary":null,"ng_fill_type_code":null,"ng_psi":null,"ng_vehicle_class":null,"ev_network_ids":{"posts":["1:150521"]},"distance":4.35428},{"access_days_time":"24
+        hours daily","cards_accepted":null,"date_last_confirmed":"2016-11-02","expected_date":null,"fuel_type_code":"ELEC","id":53936,"groups_with_access_code":"Public","open_date":"2013-06-01","owner_type_code":"LG","status_code":"E","station_name":"City
+        of Boulder - Chautauqua Ranger Cottage","station_phone":"303-442-3282","updated_at":"2017-01-18T01:52:16Z","geocode_status":"200-8","latitude":39.9977881,"longitude":-105.2813709,"city":"Boulder","intersection_directions":null,"plus4":null,"state":"CO","street_address":"900
+        Baseline Rd","zip":"80302","bd_blends":null,"e85_blender_pump":null,"ev_connector_types":["NEMA520","J1772"],"ev_dc_fast_num":null,"ev_level1_evse_num":1,"ev_level2_evse_num":1,"ev_network":null,"ev_network_web":null,"ev_other_evse":null,"hy_status_link":null,"lpg_primary":null,"ng_fill_type_code":null,"ng_psi":null,"ng_vehicle_class":null,"distance":4.47756},{"access_days_time":"24
+        hours daily","cards_accepted":null,"date_last_confirmed":"2017-05-17","expected_date":null,"fuel_type_code":"ELEC","id":78491,"groups_with_access_code":"Public","open_date":null,"owner_type_code":null,"status_code":"E","station_name":"NATURE
+        CONSVNCY","station_phone":"888-758-4389","updated_at":"2017-05-17T08:26:29Z","geocode_status":"GPS","latitude":40.0220205,"longitude":-105.2644274,"city":"Boulder","intersection_directions":"BOULDER
+        1; First space on left immediately after entering surface lot. Charger is
+        behind recycling shed.","plus4":null,"state":"CO","street_address":"2424 Spruce
+        St","zip":"80302","bd_blends":null,"e85_blender_pump":null,"ev_connector_types":["J1772"],"ev_dc_fast_num":null,"ev_level1_evse_num":null,"ev_level2_evse_num":1,"ev_network":"ChargePoint
+        Network","ev_network_web":"http://www.chargepoint.com/","ev_other_evse":null,"hy_status_link":null,"lpg_primary":null,"ng_fill_type_code":null,"ng_psi":null,"ng_vehicle_class":null,"ev_network_ids":{"posts":["1:125085"]},"distance":4.61768},{"access_days_time":"24
+        hours daily","cards_accepted":null,"date_last_confirmed":"2016-11-02","expected_date":null,"fuel_type_code":"ELEC","id":40821,"groups_with_access_code":"Public","open_date":"2011-09-01","owner_type_code":"P","status_code":"E","station_name":"Rocky
+        Mountain Institute","station_phone":"303-245-1003","updated_at":"2017-01-18T01:23:18Z","geocode_status":"200-8","latitude":40.0184337,"longitude":-105.2625191,"city":"Boulder","intersection_directions":"Driving
+        north, turn right into second parking lot; after intersection of Folsom and
+        Canyon","plus4":null,"state":"CO","street_address":"1820 Folsom St","zip":"80302","bd_blends":null,"e85_blender_pump":null,"ev_connector_types":["J1772"],"ev_dc_fast_num":null,"ev_level1_evse_num":null,"ev_level2_evse_num":2,"ev_network":null,"ev_network_web":null,"ev_other_evse":null,"hy_status_link":null,"lpg_primary":null,"ng_fill_type_code":null,"ng_psi":null,"ng_vehicle_class":null,"distance":4.7737},{"access_days_time":"24
+        hours daily","cards_accepted":null,"date_last_confirmed":"2017-05-17","expected_date":null,"fuel_type_code":"ELEC","id":66595,"groups_with_access_code":"Public","open_date":null,"owner_type_code":null,"status_code":"E","station_name":"1820
+        ANNEX A","station_phone":"888-758-4389","updated_at":"2017-05-17T08:37:15Z","geocode_status":"GPS","latitude":40.0183957,"longitude":-105.2621248,"city":"Boulder","intersection_directions":"RMI
+        FOLSOM 1; -","plus4":null,"state":"CO","street_address":"1820 Folsom St","zip":"80302","bd_blends":null,"e85_blender_pump":null,"ev_connector_types":["J1772"],"ev_dc_fast_num":null,"ev_level1_evse_num":null,"ev_level2_evse_num":2,"ev_network":"ChargePoint
+        Network","ev_network_web":"http://www.chargepoint.com/","ev_other_evse":null,"hy_status_link":null,"lpg_primary":null,"ng_fill_type_code":null,"ng_psi":null,"ng_vehicle_class":null,"ev_network_ids":{"posts":["1:118275"]},"distance":4.79459},{"access_days_time":"MO:
+        Not Specified; TU: Not Specified; WE: Not Specified; TH: Not Specified; FR:
+        Not Specified; SA: Not Specified; SU: Not Specified","cards_accepted":null,"date_last_confirmed":"2017-05-17","expected_date":null,"fuel_type_code":"ELEC","id":68879,"groups_with_access_code":"Public
+        - Card key at all times","open_date":null,"owner_type_code":null,"status_code":"E","station_name":"Walgreens
+        - Boulder, CO #12683","station_phone":"800-663-5633","updated_at":"2017-05-17T07:51:13Z","geocode_status":"GPS","latitude":40.0282811,"longitude":-105.2582581,"city":"Boulder","intersection_directions":null,"plus4":null,"state":"CO","street_address":"2870
+        28th St","zip":"80301","bd_blends":null,"e85_blender_pump":null,"ev_connector_types":["J1772"],"ev_dc_fast_num":null,"ev_level1_evse_num":null,"ev_level2_evse_num":1,"ev_network":"SemaCharge
+        Network","ev_network_web":"http://www.semacharge.com/","ev_other_evse":null,"hy_status_link":null,"lpg_primary":null,"ng_fill_type_code":null,"ng_psi":null,"ng_vehicle_class":null,"ev_network_ids":{"station":["156"],"posts":["1605"]},"distance":4.87175}]}'
+    http_version: 
+  recorded_at: Wed, 17 May 2017 17:11:44 GMT
+recorded_with: VCR 3.0.3
