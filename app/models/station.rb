@@ -5,6 +5,6 @@ class Station
   end
 
   def find_by_zipcode
-    byeb
+    StationService.find_by_zipcode
   end
 end
