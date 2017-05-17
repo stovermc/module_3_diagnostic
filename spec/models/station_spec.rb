@@ -7,6 +7,8 @@ describe Station do
       token = ENV["NREL_API_KEY"]
       stubbed_response
 
+      stations = Station.find_by_zipcode(token,)
+
     end
 
   end
