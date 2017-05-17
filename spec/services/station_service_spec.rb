@@ -3,8 +3,9 @@ require 'rails_helper'
 describe StationService do
   context ".find_by_zipcode" do
     it "returns Electric vehicle stations for zipcode 80203", vcr: true do
+      zipcode = "80203"
       token = ENV["NREL_API_KEY"]
-      stations = Station.find_by_zipcode(token)
+      stations = StationService.find_by_zipcode(zipcode, token)
       station = [:fuel_stations].first
 
       expect(stations).to be_a(Hash)
