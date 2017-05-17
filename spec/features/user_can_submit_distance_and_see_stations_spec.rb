@@ -1,8 +1,10 @@
 require 'rails_helper'
 
 describe "when a user visits "/"" do
-  context "they fill in a form and click locate" do
-    
+  context "there is a form requiring a zipcode", vcr: true do
+    visit "/"
+    expect(page).to have_field('Zipcode')
+    expect(page).to have_button('Locate')
   end
 end
 As a user
